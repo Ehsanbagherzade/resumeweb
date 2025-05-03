@@ -7,6 +7,7 @@ import { JSX } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslation } from '@/contexts/usetranslation';
+import {useState,useEffect} from 'react'
 
 interface FeatureItem {
   icon: string;
@@ -22,6 +23,16 @@ interface CustomButtonProps {
 export default function SecondSection(): JSX.Element {
   const { t, language } = useTranslation();
 
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            setWindowWidth(window.innerWidth);
+            const handleResize = () => setWindowWidth(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
+    }, []);
   const CustomButton = ({ text, icon }: CustomButtonProps): JSX.Element => (
     <Button
       size={'large'}
@@ -158,8 +169,8 @@ export default function SecondSection(): JSX.Element {
                 style={{
                   width: '100%',
                   maxHeight: '600px',
-                  height: window.innerWidth < 768 ? '100%' : '95%',
-                  objectFit: window.innerWidth < 768 ? 'fill' : 'cover',
+                    height: windowWidth < 768 ? '100%' : '95%',
+                    objectFit: windowWidth < 768 ? 'fill' : 'cover',
                   borderRadius: '3px',
                 }}
               />
