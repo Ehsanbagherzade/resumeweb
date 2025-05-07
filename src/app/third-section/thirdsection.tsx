@@ -33,12 +33,12 @@ export default function ThirdSection() {
   }
 
   const portfolioItems: portfolioItemsType[] = [
-    { name: t('chapDeniz'), url: 'https:/ChapDeniz.com' },
+    { name: t('chapDeniz'), url: 'https://ChapDeniz.com' },
     { name: t('hearingAid'), url: 'https://kharidsamak24.com' },
     { name: t('heydariSpareParts'), url: 'https://yadakiheydari.com' },
   ];
   const freeLanceWork: portfolioItemsType[] = [
-    { name: t('aresAgro'), url: 'https:/AresAgro.ir' },
+    { name: t('aresAgro'), url: 'https://AresAgro.ir' },
     { name: t('carvich'), url: 'https://carvich.ir' },
     { name: t('lavacorn'), url: 'https://lavacorn.ir' },
   ];
