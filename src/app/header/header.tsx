@@ -29,16 +29,16 @@ export default function Header() {
   const [hasShadow, setHasShadow] = useState(false);
 
   const menuItems: { key: TranslationKeys; href: string }[] = [
-    { key: 'aboutMe', href: '#about-me' },
-    { key: 'myWorks', href: '#my-works' },
-    { key: 'experience', href: '#experience' },
-    { key: 'skills', href: '#skills' },
-    { key: 'contactWays', href: '#contactWays' },
+    { key: 'aboutMe', href: '/#about-me' },
+    { key: 'siteExample', href: '/siteexample' },
+    { key: 'experience', href: '/#experience' },
+    { key: 'skills', href: '/#skills' },
+    { key: 'contactWays', href: '/#contactWays' },
   ];
   const infoItems: { key: TranslationKeys; href: string; icon: string }[] = [
     {
       key: 'call',
-      href: 'tel:+989375865904',
+      href: 'tel:+989981052756',
       icon: 'emojione:call-me-hand-light-skin-tone',
     },
     {
@@ -98,7 +98,7 @@ export default function Header() {
                     : 'left',
               }}
             >
-              {t('siteTitle')}
+              <Link href={'/'}>{t('siteTitle')} </Link>
             </Typography>
             <LanguageSwitcher />
 
@@ -114,9 +114,26 @@ export default function Header() {
                       padding: { md: '8px 8px' },
                       marginX: '0',
                       backgroundColor: 'transparent',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
                     }}
                   >
                     <Link href={item.href} passHref>
+                      {item.key === 'siteExample' && (
+                        <Icon
+                          icon="clarity:new-solid"
+                          width="40px"
+                          height="40px"
+                          style={{
+                            color: 'red',
+                            position: 'absolute',
+                            top: -18,
+                            right: 2,
+                            transform: 'rotate(10deg)',
+                          }}
+                        />
+                      )}
                       <Typography
                         sx={{
                           fontSize: { md: '16px', lg: '16px' },
@@ -168,22 +185,49 @@ export default function Header() {
             (item: { key: TranslationKeys; href: string }, index: number) => (
               <Link key={index} href={item.href} passHref>
                 <Divider />
-                <Typography
-                  p={1}
-                  m={1}
+                <Box
                   sx={{
-                    color: theme.palette.text.secondary,
-                    width: '100%',
-                    display: 'block',
-                    '&:hover': {
-                      color: 'orange',
-                      cursor: 'pointer',
-                    },
+                    position: 'relative',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start',
                   }}
                   onClick={(): void => setDrawerOpen(false)}
                 >
-                  {t(item.key)}
-                </Typography>
+                  {item.key === 'siteExample' && (
+                    <Icon
+                      icon="clarity:new-solid"
+                      width="40px"
+                      height="40px"
+                      style={{
+                        color: 'red',
+                        position: 'absolute',
+                        top: -8,
+                        left: language === 'en' ? 160 : 0,
+                        transform:
+                          language === 'en'
+                            ? 'rotate(10deg)'
+                            : 'rotate(-10deg)',
+                      }}
+                    />
+                  )}
+                  <Typography
+                    p={1}
+                    m={1}
+                    sx={{
+                      color: theme.palette.text.secondary,
+                      width: '100%',
+                      display: 'block',
+                      '&:hover': {
+                        color: 'orange',
+                        cursor: 'pointer',
+                      },
+                    }}
+                    onClick={(): void => setDrawerOpen(false)}
+                  >
+                    {t(item.key)}
+                  </Typography>{' '}
+                </Box>
               </Link>
             )
           )}

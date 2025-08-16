@@ -12,6 +12,7 @@ const en = {
   menu: 'Menu',
   contactWays: 'get in touch',
   call: 'Call',
+  siteExample: 'Website Design',
 
   // اضافه کردن ترجمه‌های جدید برای FirstSection
   greeting: "Hi, I'm ",

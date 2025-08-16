@@ -12,6 +12,7 @@ const fa = {
   menu: 'منـــو',
   contactWays: 'راه‌های ارتباطی',
   call: 'تماس',
+  siteExample: 'نمونه طراحی سایت',
 
   // اضافه کردن ترجمه‌های جدید برای FirstSection
   greeting: 'سلام من ',

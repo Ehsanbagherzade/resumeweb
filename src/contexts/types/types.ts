@@ -12,6 +12,7 @@ export type TranslationKeys =
   | 'menu'
   | 'contactWays'
   | 'call'
+  | 'siteExample'
 
   // First section
   | 'contactButton'
