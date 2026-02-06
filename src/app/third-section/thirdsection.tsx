@@ -233,10 +233,11 @@ export default function ThirdSection() {
                       }}
                       variant="h4"
                     >
-                      {language === 'en' ? '2021' : '1399'}
+                      {language === 'en' ? '2019' : '1399'}
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
+
                 <TimelineItem>
                   <TimelineSeparator>
                     <TimelineDot
@@ -330,16 +331,50 @@ export default function ThirdSection() {
                       }}
                       variant="h4"
                     >
-                      {language === 'en' ? '2024' : '1403'}
+                      {language === 'en' ? '2021' : '1401'}
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
-                <CustomModal
-                  open={openModalRoshan}
-                  onCloseAction={handleCloseRoshan}
-                  items={portfolioItems}
-                  title={t('portfolioTitle')}
-                />
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot
+                      sx={{
+                        width: 20,
+                        height: 20,
+                        outline: '6px solid #fcecc0',
+                      }}
+                      color="secondary"
+                    />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent
+                    variant="h2"
+                    sx={{
+                      textAlign: language === 'fa' ? 'right' : 'left',
+                    }}
+                    mb={2}
+                  >
+                    <span style={{ cursor: 'pointer' }}>
+                      {t('hamresantitle')}
+                    </span>
+                    <Typography variant="h4" mb={1} mt={1}>
+                      {t('hamresanjobtitle')}
+                    </Typography>
+
+                    <Typography
+                      sx={{
+                        fontFamily:
+                          language === 'en'
+                            ? 'Inter, sans-serif'
+                            : 'IranSans, sans-serif',
+                      }}
+                      variant="h4"
+                    >
+                      {language === 'en' ? '2021-2023' : '1401-1403'}
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+
                 <TimelineItem>
                   <TimelineSeparator>
                     <TimelineDot

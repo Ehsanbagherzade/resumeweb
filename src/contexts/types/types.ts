@@ -81,7 +81,9 @@ export type TranslationKeys =
   | 'nextJs'
   | 'muiDesign'
   | 'api'
-  | 'reactQuery';
+  | 'reactQuery'
+  | 'hamresantitle'
+  | 'hamresanjobtitle';
 
 export type Translations = {
   [key in TranslationKeys]: string;
