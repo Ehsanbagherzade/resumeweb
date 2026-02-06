@@ -61,7 +61,7 @@ const en = {
   technicalManager: 'Technical Manager',
   software: 'Software',
   roshanAgency: 'Roshan Digital Marketing Agency',
-  wordpressDesigner: 'WordPress Designer',
+  wordpressDesigner: 'Front-End & WordPress Developer',
   portfolioSamples: 'Portfolio Samples',
   freelanceProjects: 'Freelance Projects',
   freelanceWorksTitle: 'My Freelance Works',
@@ -88,5 +88,9 @@ const en = {
   muiDesign: 'Material UI Design',
   api: 'API Integration',
   reactQuery: 'React Query',
+
+  //hamresan info
+  hamresantitle: 'Hamresan company',
+  hamresanjobtitle: 'Front End Developer',
 };
 export default en;

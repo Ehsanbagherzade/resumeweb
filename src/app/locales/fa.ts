@@ -2,7 +2,7 @@ const fa = {
   siteTitle: 'وبسایت رزومه احسان باقرزاده',
   aboutMe: 'درباره من',
   myWorks: 'کارهای من',
-  experience: 'تجارب شخصی',
+  experience: 'تجارب کاری',
   education: 'تحصیلات',
   skills: 'مهارت‌ها',
   contact: 'تماس',
@@ -62,7 +62,7 @@ const fa = {
   technicalManager: 'مسئول بخش فنی',
   software: 'نرم افزاری',
   roshanAgency: 'آژانس دیجیتال مارکتینگ و طراحی سایت روشن',
-  wordpressDesigner: 'طراح سایت وردپرس',
+  wordpressDesigner: 'توسعه دهنده فرانت و وردپرس',
   portfolioSamples: 'نمونه کار ها',
   freelanceProjects: 'پروژه های فریلنسری',
   freelanceWorksTitle: 'کار های طراحی فریلنسری',
@@ -89,5 +89,8 @@ const fa = {
   muiDesign: 'طراحی با متریال یو آی',
   api: 'کار با ای پی آی بکند',
   reactQuery: 'هوک ری اکت کوئری',
+  //hamresan info
+  hamresantitle: 'شرکت همرسان',
+  hamresanjobtitle: 'توسعه دهنده فرانت',
 };
 export default fa;
