@@ -92,5 +92,9 @@ const en = {
   //hamresan info
   hamresantitle: 'Hamresan company',
   hamresanjobtitle: 'Front End Developer',
+
+  // funglish
+  FunglishTitle: 'Funglish App ',
+  FunglishJobTitle: 'Frontend Development Lead',
 };
 export default en;

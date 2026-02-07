@@ -83,7 +83,9 @@ export type TranslationKeys =
   | 'api'
   | 'reactQuery'
   | 'hamresantitle'
-  | 'hamresanjobtitle';
+  | 'hamresanjobtitle'
+  | 'FunglishTitle'
+  | 'FunglishJobTitle';
 
 export type Translations = {
   [key in TranslationKeys]: string;

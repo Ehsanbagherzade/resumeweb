@@ -322,6 +322,12 @@ export default function ThirdSection() {
                         {t('portfolioSamples')}
                       </Typography>
                     </motion.div>
+                    <CustomModal
+                      open={openModalRoshan}
+                      onCloseAction={handleCloseRoshan}
+                      items={portfolioItems}
+                      title={t('portfolioSamples')}
+                    />
                     <Typography
                       sx={{
                         fontFamily:
@@ -357,7 +363,7 @@ export default function ThirdSection() {
                     <span style={{ cursor: 'pointer' }}>
                       {t('hamresantitle')}
                     </span>
-                    <Typography variant="h4" mb={1} mt={1}>
+                    <Typography variant="h4" mb={2} mt={2}>
                       {t('hamresanjobtitle')}
                     </Typography>
 
@@ -371,6 +377,45 @@ export default function ThirdSection() {
                       variant="h4"
                     >
                       {language === 'en' ? '2021-2023' : '1401-1403'}
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineSeparator>
+                    <TimelineDot
+                      sx={{
+                        width: 20,
+                        height: 20,
+                        outline: '6px solid #fcecc0',
+                      }}
+                      color="secondary"
+                    />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent
+                    variant="h2"
+                    sx={{
+                      textAlign: language === 'fa' ? 'right' : 'left',
+                    }}
+                    mb={2}
+                  >
+                    <span style={{ cursor: 'pointer' }}>
+                      {t('FunglishTitle')}
+                    </span>
+                    <Typography variant="h4" mb={2} mt={2}>
+                      {t('FunglishJobTitle')}
+                    </Typography>
+
+                    <Typography
+                      sx={{
+                        fontFamily:
+                          language === 'en'
+                            ? 'Inter, sans-serif'
+                            : 'IranSans, sans-serif',
+                      }}
+                      variant="h4"
+                    >
+                      {language === 'en' ? '2023-2026' : '1401-1404'}
                     </Typography>
                   </TimelineContent>
                 </TimelineItem>
@@ -395,7 +440,7 @@ export default function ThirdSection() {
                     mb={4}
                   >
                     {t('freelanceProjects')}
-                    <Typography variant="h4" mb={1} mt={1}>
+                    <Typography variant="h4" mb={2} mt={2}>
                       {t('wordpressDeveloper')}
                     </Typography>
                     <motion.div

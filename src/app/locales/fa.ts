@@ -92,5 +92,9 @@ const fa = {
   //hamresan info
   hamresantitle: 'شرکت همرسان',
   hamresanjobtitle: 'توسعه دهنده فرانت',
+
+  // funglish
+  FunglishTitle: 'فانگلیش اپ',
+  FunglishJobTitle: 'سرپرست توسعه فرانت‌اند',
 };
 export default fa;

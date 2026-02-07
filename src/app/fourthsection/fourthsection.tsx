@@ -59,9 +59,7 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('wordpressDesigner')} value={83}>
-                    <Icon icon="skill-icons:wordpress" width="60" height="50" />
-                  </TooltipCustom>
+                  <Icon icon="skill-icons:wordpress" width="60" height="50" />
                 </motion.div>
                 <motion.div
                   animate={{
@@ -92,9 +90,7 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('seo')} value={50}>
-                    <Icon icon="tabler:seo" width="60" height="50" />
-                  </TooltipCustom>
+                  <Icon icon="tabler:seo" width="60" height="50" />
                 </motion.div>
                 <motion.div
                   animate={{
@@ -119,13 +115,7 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('googleAnalytics')} value={50}>
-                    <Icon
-                      icon="logos:google-analytics"
-                      width="60"
-                      height="50"
-                    />
-                  </TooltipCustom>
+                  <Icon icon="logos:google-analytics" width="60" height="50" />
                 </motion.div>
                 <motion.div
                   animate={{
@@ -139,9 +129,7 @@ export default function FourthSection() {
                     ease: 'easeInOut',
                   }}
                 >
-                  <TooltipCustom title={t('elementor')} value={95}>
-                    <Icon icon="fa-brands:elementor" width="60" height="50" />
-                  </TooltipCustom>
+                  <Icon icon="fa-brands:elementor" width="60" height="50" />
                 </motion.div>
               </Box>
             </Paper>
@@ -187,13 +175,7 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('reactJs')} value={70}>
-                    <Icon
-                      icon="devicon:react-wordmark"
-                      width="60"
-                      height="50"
-                    />
-                  </TooltipCustom>
+                  <Icon icon="devicon:react-wordmark" width="60" height="50" />
                 </motion.div>
                 <motion.div
                   animate={{
@@ -215,9 +197,7 @@ export default function FourthSection() {
                     ease: 'easeInOut',
                   }}
                 >
-                  <TooltipCustom title={t('nextJs')} value={80}>
-                    <Icon icon="logos:nextjs" width="60" height="50" />
-                  </TooltipCustom>
+                  <Icon icon="logos:nextjs" width="60" height="50" />
                 </motion.div>
                 <motion.div
                   animate={{ rotateY: 360 }}
@@ -234,14 +214,12 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('muiDesign')} value={82}>
-                    <Icon
-                      icon="simple-icons:mui"
-                      width="60"
-                      height="50"
-                      style={{ color: '#1b54bf' }}
-                    />
-                  </TooltipCustom>
+                  <Icon
+                    icon="simple-icons:mui"
+                    width="60"
+                    height="50"
+                    style={{ color: '#1b54bf' }}
+                  />
                 </motion.div>
                 <motion.div
                   animate="idle"
@@ -268,19 +246,15 @@ export default function FourthSection() {
                     },
                   }}
                 >
-                  <TooltipCustom title={t('api')} value={60}>
-                    <Icon
-                      icon="flowbite:api-key-outline"
-                      width="60"
-                      height="50"
-                      style={{ color: '#bf865c' }}
-                    />
-                  </TooltipCustom>
+                  <Icon
+                    icon="flowbite:api-key-outline"
+                    width="60"
+                    height="50"
+                    style={{ color: '#bf865c' }}
+                  />
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.2 }}>
-                  <TooltipCustom title={t('reactQuery')} value={60}>
-                    <Icon icon="logos:react-query" width="90" height="30" />
-                  </TooltipCustom>
+                  <Icon icon="logos:react-query" width="90" height="30" />
                 </motion.div>
               </Box>
             </Paper>
