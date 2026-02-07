@@ -2,7 +2,6 @@
 import { Typography, Grid, Box, Paper } from '@mui/material';
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
-import TooltipCustom from '@/components/toltip-custom/toltipcustom';
 import { useTranslation } from '@/contexts/usetranslation';
 
 export default function FourthSection() {
